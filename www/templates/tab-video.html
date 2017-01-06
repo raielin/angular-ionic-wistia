@@ -1,8 +1,8 @@
-<ion-view view-title="Video">
+<ion-view view-title="Wistia Video">
   <ion-content class="padding">
     <div class="card">
       <div class="item item-text-wrap">
-        The following video handle is obtained using Wistia's vanilla javascript code which determines onReady status through 'window'. (See browser console)
+        The following video handle is obtained using Wistia's vanilla javascript code which determines onReady status through 'window'. (See browser console.)
 
         <pre style="border:1px solid red; margin:20px; padding:10px;">
           $window._wq = $window._wq || [];
@@ -10,7 +10,9 @@
             console.log("I got a handle to the video using Wistia's onReady method!", video.uuid);
           }});
         </pre>
-        How can we make this code 'angular friendly' so the onReady method doesn't execute multiple times when revisiting the controller view?
+        What is it about using <b style="font-family: Courier;">$window._wq</b> that ends up executing the <b style="font-family: Courier">onReady</b> method multiple times?
+        <br \><br \>
+        How can we make this code Angular friendly (without "hacking" or forcing a work-around) so that <b style="font-family: Courier">onReady</b> only fires once when revisiting the controller view each time?
       </div>
     </div>
     <div class="wistia_embed wistia_async_5bbw8l7kl5" style="width:640px;height:360px;">&nbsp;</div>
