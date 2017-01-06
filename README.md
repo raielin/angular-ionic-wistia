@@ -6,5 +6,10 @@ Wistia's javascript player api uses 'window' to process video onReady events. Th
 Use node v4.x
 
 npm install -g cordova ionic
+
 npm install
+
 ionic serve
+
+# Wistia's Javascript Player API Documentation
+https://wistia.com/doc/player-api#get_started
