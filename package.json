@@ -2,6 +2,14 @@
   "name": "angular-ionic-wistia",
   "version": "1.1.1",
   "description": "An Ionic project",
+  "main": "app.js",
+  "engines": {
+    "node": "^4.x",
+    "npm": "^2.11.x"
+  },
+  "scripts": {
+    "postinstall": "bower install"
+  },
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",
